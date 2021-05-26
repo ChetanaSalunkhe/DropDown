@@ -29,13 +29,11 @@ class DropDownList extends State {
           child:Center(
             child: Column(
               children: [
-                //SizedBox(height: 10,),
-
-                Padding(padding: EdgeInsets.all(10),
+                Padding(padding: EdgeInsets.only(left:30,right: 30,top:20,bottom: 20),
 
                 child:  DropdownButton<String>(
                   dropdownColor: Colors.grey,
-                  //isExpanded: true, //spinner width expanded to match parent
+                  isExpanded: true, //spinner width expanded to match parent
                   value: dropDownValue,
                   icon: Icon(Icons.arrow_drop_down),
                   iconSize: 24,
@@ -61,7 +59,7 @@ class DropDownList extends State {
                 ),
 
                 Text("Selected Language : "+'$dropDownValue',
-                  style: TextStyle(fontSize: 15,fontWeight: FontWeight.normal,color: Colors.black),)
+                  style: TextStyle(fontSize: 15,fontWeight: FontWeight.w900,color: Colors.black),)
               ],
             ),
           )
